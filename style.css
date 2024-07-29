@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#searchbar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    /* outline: none; */
+}
+#searchbar:active{
+    outline-color: #da0d0dbb;
+}
+#searchbar:hover{
+    outline-color: #631414;
+}
+
+#btn {
+    padding: 10px;
+    border: none;
+    background-color: #631414;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #f50404bb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+td img:hover {
+    transform: scale(1.1);
+}
+
+td:hover {
+    color: rgb(56, 194, 159);
+}
+
+.employee-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.employee-form input[type="text"],
+.employee-form input[type="number"],
+.employee-form input[type="url"] {
+    width: 18%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.employee-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #631414;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.employee-form input[type="submit"]:hover {
+    background-color: #f50404bb;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #d9534f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #c9302c;
+}
+
+
+#emp h1{
+color: #631414;
+text-transform: capitalize;
+text-shadow: #c9302c;
+/* border: 2px solid red; */
+width: 165px;
+border-radius: 4px;
+box-shadow: -2px 2px 5px 0px #c9302c;
+}
+
+#emp h1:hover{
+    color: #c9302c;
+}
